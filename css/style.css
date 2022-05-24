@@ -69,7 +69,7 @@
 
 .hombre {
   grid-area: hombre;
-  background-image: url(".../image/logo-hombre.jpg");
+  background-image: url("../image/logo-hombre.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;}
@@ -79,7 +79,7 @@
 
 .exc {
   grid-area: exc;
-  background-image: url("./image/logo-exc.jpg");
+  background-image: url("../image/logo-exc.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;}
@@ -89,7 +89,7 @@
 
 .mujer {
   grid-area: mujer;
-  background-image: url("./image/logo-mujer.jpg");
+  background-image: url("../image/logo-mujer.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;}
