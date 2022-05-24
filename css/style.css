@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;}
+
+/* H1 */
+
+.containerHeader {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/image/boudoir-5009431_960_720.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;}
+
+.tituloPrincipal {
+  text-align: center;
+  line-height: 100vh;
+  color: #e8dbfd;
+  text-shadow: 0 0 5px;}
+
+/* MAIN */
+
+.navBar {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-areas: "hombre mujer exc";}
+
+.hombre {
+  grid-area: hombre;
+  background-image: url("/image/logo-hombre.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;}
+
+.hombre:hover {
+  cursor: pointer;}
+
+.exc {
+  grid-area: exc;
+  background-image: url("/image/logo-exc.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;}
+
+.exc:hover {
+  cursor: pointer;}
+
+.mujer {
+  grid-area: mujer;
+  background-image: url("/image/logo-mujer.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;}
+
+.mujer:hover {
+  cursor: pointer;}
+
+.navBar > div > a {
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 0 0 5px;
+  line-height: 100px;
+  font-family: "Roboto Flex", sans-serif;
+  color: #e8dbfd;}
+
+/* FOOTER */
+
+img {
+  height: 200px;
+  width: auto;}
+
+.containerfooter {
+  border: solid rgb(255, 255, 173) 1px;
+  background-color: rgba(22, 19, 19, 0.823);
+  color: #e8dbfd;
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas: "logo secciones contacto horario";}
+
+.logo {
+  grid-area: logo;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.imgLogo {
+  border-radius: 100px;}
+
+.secciones {
+  grid-area: secciones;}
+
+.contacto {
+  grid-area: contacto;}
+
+.horario {
+  grid-area: horario;}
+
+.itemssecciones {
+  line-height: 50px;
+  text-decoration: none;}
+
+.itemssecciones:hover {
+  color: rgba(203, 202, 180, 1);
+  text-decoration: underline;}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+
+.horario {
+  grid-area: horario;
+  margin-top: 60px;}
+
+.titulohs {
+  margin-bottom: 10px;}
+
+li {
+  list-style-type: none;
+  font-size: 16px;}
+
+h2 {
+  font-size: 20px;
+  margin-left: 10px;}
+
+a {
+  color: #e8dbfd;
+  font-size: 16px;}
+
+.fa-solid {
+  margin-right: 10px;}
+
+.fa-brands {
+  margin-right: 10px;}
+
+/* MUJER */
+
+header {
+  background-color: blue;
+  padding: 1rem 0rem;}
+
+.tituloSecciones {
+  text-align: center;
+  padding: 5px;
+  color: #e8dbfd;}
+
+.navSeccion {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 0rem 1rem;
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;}
+
+
+.talle,.marca,.home {
+  text-align: center;
+  font-size: 30px;
+  color: #e8dbfd;
+  text-shadow: 0 0 5px;}
+
+.home > a {
+  text-decoration: none;
+  font-size: 30px;}
+
+.containerProductos {
+  text-align: center;
+  background-color: green;
+  width: 100%;
+  display: grid;
+  padding: 2rem 1rem;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);}
+
+.producto > img {
+  height: 250px;
+  width: auto;}
+
+.texto {
+  font-size: 18px;}
+
+/* Vista mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .navBar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: repeat(3, 1 fr);
+    grid-template-areas:
+    "hombre"
+    "mujer"
+    "exc";}
+
+  .hombre {
+    grid-area: hombre;}
+
+  .mujer {
+    grid-area: mujer;}
+
+  .exc {
+    grid-area: exc;}
+
+  /* MUJER */
+
+  .navSeccion {
+    display: grid;
+    grid-template-columns: auto;}
+
+  .containerProductos {
+    grid-template-columns: repeat(2, 1fr);}
+
+  .texto {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;}
+
+  div > a {
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+
+  .containerfooter {
+    padding: 1rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas:
+      "contacto contacto"
+      "horario horario"
+      "logo logo"
+      "secciones secciones";}
+
+  .contacto {
+    grid-area: contacto;
+    text-align: center;}
+
+  .horario {
+    grid-area: horario;}
+
+  .logo {
+    grid-area: logo;
+    margin-bottom: 50px;}
+
+  .secciones {
+    grid-area: secciones;}
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+
+  .itemssecciones {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .containerProductos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
