@@ -8,7 +8,7 @@
 .containerHeader {
   width: 100%;
   height: 100vh;
-  background-image: url("./image/boudoir-5009431_960_720.jpg");
+  background-image: url("../image/boudoir-5009431_960_720.jpg");
   background-size: cover;
   background-position: center;
   display: grid;}
@@ -69,7 +69,7 @@
 
 .hombre {
   grid-area: hombre;
-  background-image: url("./image/logo-hombre.jpg");
+  background-image: url(".../image/logo-hombre.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;}
