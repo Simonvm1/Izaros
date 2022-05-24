@@ -17,7 +17,47 @@
   text-align: center;
   line-height: 100vh;
   color: #e8dbfd;
-  text-shadow: 0 0 5px;}
+  text-shadow: 0 0 5px;
+  text-transform: uppercase;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;}
+    
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+    
+  100% {
+    opacity: 1;
+    }
+}
+  
+  
+/* SOCIAL BAR */
+  
+.social-bar{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;}
+  
+.icon{
+  color: #e8dbfd;
+  padding: 10px;
+  display: flex;
+  transition: all .5s;
+  font-size: 30px;}
+
+.icon:hover {
+  padding-right: 40px;
+}
 
 /* MAIN */
 
